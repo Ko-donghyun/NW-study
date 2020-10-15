@@ -1,8 +1,13 @@
 # NW-study
 
-## Network
+## Network 기본
  - [데이터 전송과정](https://slenderankle.tistory.com/228)
  - [대역폭(BW; BandWidth)](https://blog.naver.com/on21life/221340548735)
+   - 특정 기능을 수행할 수 있는 주파수의 범위(Hz 단위)
+   - 신뢰성 있는 통신의 자료 전송률(data rate)은 통신을 위해 쓰이는 신호의 주파수 범위에 밀접하게 비례
+     - 네트워크 대역폭(Network BandWidth)
+     - 데이터 대역폭(Data BandWidth)
+     - 디지털 대역폭(Digital BandWidth)
  
 ## Waveform
  - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
