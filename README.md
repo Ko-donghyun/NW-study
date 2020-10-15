@@ -2,7 +2,7 @@
 
 ## Network
  - [데이터 전송과정](https://slenderankle.tistory.com/228)
- - [대역폭(BW; BandWidth)](https://blog.naver.com/on21life/221340548735+&cd=4&hl=ko&ct=clnk&gl=kr)
+ - [대역폭(BW; BandWidth)](https://blog.naver.com/on21life/221340548735)
  
 ## Waveform
  - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
