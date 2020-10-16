@@ -9,7 +9,11 @@
      - 데이터 대역폭(Data BandWidth)
      - 디지털 대역폭(Digital BandWidth)
  
-## Waveform
+## [Waveform](https://guslabview.tistory.com/159)
+ - [FDMA(Frequency Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=806)
+ - [TDMA(Time Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=348&id=911)
+ - [CDMA(Code Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=253&id=386)
+
  - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
    - 고속의 송신 신호를 수백개 이상의 직교(Orthogonal)하는 협대역 부 반송파(Subcarrier)로 변조시켜 다중화하는 방식
    - [참고](m.blog.naver.com › anniy7)
