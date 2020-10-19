@@ -22,8 +22,18 @@
  - [CP(Cyclic Prefix)](http://www.ktword.co.kr/abbr_view.php?m_temp1=3164)
    - 유효 심볼구간의 마지막 구간의 신호를 복사하여 앞에 삽입
  
+ - [User Plane vs Control Plane](https://m.blog.naver.com/ykryu7/221300314804)
+   - User Plane(U-Plane)
+     - 보이스톡 상황에서, 직접적인 통화 데이터를 칭함
+   - Control Plane(C-Plane)
+     - 보이트톡 상황에서, 통화를 제어하는데 사용되는 것을 칭함
+     - 통화 시작, 종료, 통화 연결을 유지하느데 사용되는 데이터 전송 정보
+     - 데이터 사용량을 위해 과금 서버에 보이스톡 통화정보를 기록해야함
+     - 통화 중, 기지국 커버리지 반경을 벗어날 경우 핸드오버를 해야함
+     - 과금, 위치정보등록, 로밍콜 연결, 부재중 서비스, 콜포워딩, 음성사서함, 유선전화와 핸드폰간의 통화, 국제전화 등 우리가 편리하게 사용하는 서비스들도 네트워크 안에 수많은 서버들과 c-plane 데이터를 주고받으며 서비스
+     
  - 물리 데이터 전송용 채널 (Physical Data Channel)
-   - 하향 링크
+   - 하향 링크(Down Link, RX)
       - PBCH (Physical Broadcast Channel)
       - PDSCH (Physical Downlink Shared Channel)
       - PMCH (Physical Multicast Channel)
