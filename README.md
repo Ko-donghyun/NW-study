@@ -11,10 +11,10 @@
 
 ## 장비
  - CN(Core Network) : 과금 등의 서비스 정책 처리 단
- - [C-RAN 구조(Cloud-Radio Access Network; CU + DU)](https://ko.wikipedia.org/wiki/무선_접속_네트워크)
+ - [4G C-RAN 구조(Centralized/Cloud-Radio Access Network; CU + DU)](https://ko.wikipedia.org/wiki/무선_접속_네트워크)
    - BBU(BaseBand Unit)
      - RRC, PDCP, RLC, MAC, PHY
-   - RRH(Remote Radio Head vs Radio Unit)
+   - RRH(Remote Radio Head ~vs Radio Unit~)
      - RF
    - CN --- BBU --- (CPRI) --- RRH
    - |<-백홀->|<--- 프론트홀 --->|
@@ -22,11 +22,11 @@
 
  - 5G Function Split
    - 5G에서 massive MIMO와 넓은 대역폭으로 인한 데이터 속도 증가 상황을 고려하여 4G에서의 DU와 RU 분리 위치보다 더 상위 계층에서 분리
-   - CU(Central Unit vs Control Unit)
+   - CU(Central Unit ~vs Control Unit~)
      - RRC, PDCP
-   - DU(Distributed Unit vs Digital Unit)
+   - DU(Distributed Unit ~vs Digital Unit~)
      - RLC, MAC, PHY-High
-   - RU(Remote Unit vs Radio Unit)
+   - RU(Remote Unit ~vs Radio Unit~)
      - PHY-Low
      - RF
    - CN --- CU --- DU --- (eCPRI) --- RU
@@ -56,8 +56,9 @@
  - [CDMA(Code Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=253&id=386)
 
  - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
-   - 고속의 송신 신호를 수백개 이상의 직교(Orthogonal)하는 협대역 부 반송파(Subcarrier)로 변조시켜 다중화하는 방식
-   - [참고](m.blog.naver.com › anniy7)
+   - 고속의 송신 신호를 수백개 이상의 직교(Orthogonal)하는 협대역 부 반송파(Subcarrier)로 변조시켜 다중화하는 방식 
+ - [참고](https://m.blog.naver.com/anniy7/220616369420)
+ - [참고2](http://www.ktword.co.kr/abbr_view.php?m_temp1=403)
 
 ## 데이터 전송
  - [CP(Cyclic Prefix)](http://www.ktword.co.kr/abbr_view.php?m_temp1=3164)
