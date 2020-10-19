@@ -21,7 +21,25 @@
 ## 데이터 전송
  - [CP(Cyclic Prefix)](http://www.ktword.co.kr/abbr_view.php?m_temp1=3164)
    - 유효 심볼구간의 마지막 구간의 신호를 복사하여 앞에 삽입
-   
+ 
+ - 물리 데이터 전송용 채널 (Physical Data Channel)
+   - 하향 링크
+      - PBCH (Physical Broadcast Channel)
+      - PDSCH (Physical Downlink Shared Channel)
+      - PMCH (Physical Multicast Channel)
+   - 상향 링크
+      - PUSCH (Physical Uplink Shared Channel)
+      - PRACH (Physical Random Access Channel)
+      
+ - 물리 제어 전송용 채널 (Physical Control Channel)
+   - 하향 링크
+      - PCFICH (Physical Control Format Indicator Channel)
+      - PHICH (Physical Hybrid ARQ Indicator Channel)
+      - PDCCH (Physical Downlink Control Channel)
+      - R-PDCCH (Relay Physical Downlink Control Channel)
+   - 상향 링크
+      - PUCCH (Physical Uplink Control Channel)
+      
 ## 연결
  - [MIMO(Multiple Input Multiple Output)](https://www.ni.com/ko-kr/innovations/white-papers/14/5g-massive-mimo-testbed--from-theory-to-reality--.html)
    - 송수신 기지국(BTS; Base Transceiver Station)에서 다량의 안테나(64개 이상)를 사용하여 무선 데이터 속도와 링크 안정성 향상
@@ -37,8 +55,21 @@
 ## 용어
  - [RRC(Radio Resource Control)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5175&m_search=RRC)
    - 무선 자원 제어
+   
  - [PDCP(Packet Data Convegence Protocol)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5178&m_search=PDCP)
    - IP 헤더 압축 및 압축 해지, 사용자 데이터의 전송, Radio Bearer에 대한 시퀀스 번호 유지
+   
+ - [RLC(Radio Link Control)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5169&m_search=RLC)
+   - 패킷의 단편화; 상위 PDCP 계층으로부터의 패킷 크기를 MAC 계층 크기로 맞추어 데이터 전달
+   
+ - [MAC(Media Access Control)](http://www.ktword.co.kr/abbr_view.php?m_temp1=400&id=455&nav=2&m_search=MAC)
+   - 여러 단말들의 `공유 매체(Shared Medium)` 사용에 대해 단말 간 충돌/경합 발생을 제어하는 방식
+
+ - [PHY(Physical Layer)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5179&m_search=PHY)
+   - 주파수 변조, 코딩, 물리계층 HARQ 처리, 다중 안테나 처리, 신호의 시간-주파수 자원에의 매핑, 전송채널을 물리채널로의 매핑 등
+   - 전송 채널, 물리 채널, 물리 제어 정보 간에 매핑
+   
+      
    
 ## 기타
  - [참고](www.wlanpedia.org › Home › Technology)
