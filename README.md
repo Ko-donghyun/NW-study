@@ -8,7 +8,48 @@
      - 네트워크 대역폭(Network BandWidth)
      - 데이터 대역폭(Data BandWidth)
      - 디지털 대역폭(Digital BandWidth)
+
+## 장비
+ - CN(Core Network) : 과금 등의 서비스 정책 처리 단
+ - [C-RAN 구조(Cloud-Radio Access Network; CU + DU)](https://ko.wikipedia.org/wiki/무선_접속_네트워크)
+   - BBU(BaseBand Unit)
+     - RRC, PDCP, RLC, MAC, PHY
+   - RRH(Remote Radio Head vs Radio Unit)
+     - RF
+   - CN --- BBU --- (CPRI) --- RRH
+   - |<-백홀->|<--- 프론트홀 --->|
+   - Function Split으로 CU와 DU로 나눠짐 [참고](https://www.netmanias.com/ko/post/blog/13093/5g-c-ran-fronthaul-lte-sdn-nfv/5g-ran-and-fronthaul-architectue-function-split-and-open-fronthaul-interface)
+
+ - 5G Function Split
+   - 5G에서 massive MIMO와 넓은 대역폭으로 인한 데이터 속도 증가 상황을 고려하여 4G에서의 DU와 RU 분리 위치보다 더 상위 계층에서 분리
+   - CU(Central Unit vs Control Unit)
+     - RRC, PDCP
+   - DU(Distributed Unit vs Digital Unit)
+     - RLC, MAC, PHY-High
+   - RU(Remote Unit vs Radio Unit)
+     - PHY-Low
+     - RF
+   - CN --- CU --- DU --- (eCPRI) --- RU
+   - |<--- 백홀 --->|<--- 프론트홀 --->|
+ - Below 6G Radio Product
+   - MMU(Massive MIMO Unit)
+     - 안테나 포함
+   - RRU(Remote Radio Unit)
+     - 안테나 미포함
+ - Above 6G Radio Product
+   - mmWave AU
+     - DU, RU, 안테나 포함
+   - mmWave RU
+
+ - FSU(Fronthaul Switch Unit) 
+   - CPRI, eCPRI 간의 호환성 맞춰주기 위한 장치
+ - UE(User Equipment)
+   - 단말기
+
+ - S-eNB: 단말기가 현재 연결되어 있는 기지국, Serving eNB
+ - T-eNB: 단말기가 핸드오버로 옮겨갈 기지국, Target eNB
  
+  
 ## [Waveform](https://guslabview.tistory.com/159)
  - [FDMA(Frequency Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=806)
  - [TDMA(Time Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=348&id=911)
@@ -30,7 +71,7 @@
      - 통화 시작, 종료, 통화 연결을 유지하느데 사용되는 데이터 전송 정보
      - 데이터 사용량을 위해 과금 서버에 보이스톡 통화정보를 기록해야함
      - 통화 중, 기지국 커버리지 반경을 벗어날 경우 핸드오버를 해야함
-     - 과금, 위치정보등록, 로밍콜 연결, 부재중 서비스, 콜포워딩, 음성사서함, 유선전화와 핸드폰간의 통화, 국제전화 등 우리가 편리하게 사용하는 서비스들도 네트워크 안에 수많은 서버들과 c-plane 데이터를 주고받으며 서비스
+     - 과금, 위치정보등록, 로밍콜 연결, 부재중 서비스, 콜포워딩, 음성사서함, 유선전화와 핸드폰간의 통화, 국제전화 등 다양한 서비스들을 위해 수많은 서버들과 데이터를 주고 받음
      
  - 물리 데이터 전송용 채널 (Physical Data Channel)
    - 하향 링크(Down Link, RX)
@@ -65,6 +106,9 @@
 ## 용어
  - [RRC(Radio Resource Control)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5175&m_search=RRC)
    - 무선 자원 제어
+ 
+ - [SDAP(Service Data Adaptation Protocol)]()
+   - 유･무선 구간사이에 발생하는 디커플링을 완충하기 위한 새로운 무선 계층
    
  - [PDCP(Packet Data Convegence Protocol)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5178&m_search=PDCP)
    - IP 헤더 압축 및 압축 해지, 사용자 데이터의 전송, Radio Bearer에 대한 시퀀스 번호 유지
@@ -79,7 +123,15 @@
    - 주파수 변조, 코딩, 물리계층 HARQ 처리, 다중 안테나 처리, 신호의 시간-주파수 자원에의 매핑, 전송채널을 물리채널로의 매핑 등
    - 전송 채널, 물리 채널, 물리 제어 정보 간에 매핑
    
-      
+ - MME: Mobility ManagemEntity
+ - SGW: Serving Gateway
+
+ - [프론트홀(Fronthaul)](http://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=166872-3)
+   - 프론트홀(fronthaul) 링크는 주로 고속의 광케이블 등으로 구성되며 <br>동위상/직교 데이터(I/Q data: In-phase and Quadrature data)</br>를 전달
+   - 인터페이스 표준
+      - 일반 공용 무선 인터페이스(CPRI: Common Public Radio Interface)
+      - 오픈 무선 장치 인터페이스(ORI: Open Radio Equipment Interface)
+      - 오픈 기지국 구조 이니셔티브(OBSAI: Open Base Station Architecture Initiative) 
    
 ## 기타
  - [참고](www.wlanpedia.org › Home › Technology)
