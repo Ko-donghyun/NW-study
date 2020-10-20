@@ -73,9 +73,13 @@
      - 데이터 사용량을 위해 과금 서버에 보이스톡 통화정보를 기록해야함
      - 통화 중, 기지국 커버리지 반경을 벗어날 경우 핸드오버를 해야함
      - 과금, 위치정보등록, 로밍콜 연결, 부재중 서비스, 콜포워딩, 음성사서함, 유선전화와 핸드폰간의 통화, 국제전화 등 다양한 서비스들을 위해 수많은 서버들과 데이터를 주고 받음
-     
+
+ - [전송채널, 물리채널, 물리제어정보 간에 매핑](http://www.ktword.co.kr/abbr_view.php?m_temp1=5179&m_search=PHY)
+ 
+   ![ex_screenshot](./img/linkMappding.jpg)
+   
  - 물리 데이터 전송용 채널 (Physical Data Channel)
-   - 하향 링크(Down Link, RX)
+   - 하향 링크(Down Link, ~~RX~~)
       - PBCH (Physical Broadcast Channel)
       - PDSCH (Physical Downlink Shared Channel)
       - PMCH (Physical Multicast Channel)
