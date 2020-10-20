@@ -50,16 +50,6 @@
  - T-eNB: 단말기가 핸드오버로 옮겨갈 기지국, Target eNB
  
   
-## [Waveform](https://guslabview.tistory.com/159)
- - [FDMA(Frequency Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=806)
- - [TDMA(Time Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=348&id=911)
- - [CDMA(Code Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=253&id=386)
-
- - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
-   - 고속의 송신 신호를 수백개 이상의 직교(Orthogonal)하는 협대역 부 반송파(Subcarrier)로 변조시켜 다중화하는 방식 
- - [참고](https://m.blog.naver.com/anniy7/220616369420)
- - [참고2](http://www.ktword.co.kr/abbr_view.php?m_temp1=403)
-
 ## 데이터 전송
  - [CP(Cyclic Prefix)](http://www.ktword.co.kr/abbr_view.php?m_temp1=3164)
    - 유효 심볼구간의 마지막 구간의 신호를 복사하여 앞에 삽입
@@ -96,6 +86,31 @@
    - 상향 링크
       - PUCCH (Physical Uplink Control Channel)
       
+      
+
+## 데이터 전송 방식
+ - FDD(Frequency Division Duplexing)
+   - Uplink와 Downlink를 동시에 전달 가능
+   
+ - TDD(Time Division Duplexing)
+   - Uplink와 Downlink를 주어진 시간에만 전달 가능
+   
+
+## [Waveform](https://guslabview.tistory.com/159)
+ - Multiple Access : 다수의 단말이 자원을 공유하여 접속하는 방식
+ - [FDMA(Frequency Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=806)
+   - Like 라디오 채널
+ - [TDMA(Time Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=348&id=911)
+   - Like 무전기 원리
+ - [CDMA(Code Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=253&id=386)
+
+ - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
+   - 고속의 송신 신호를 수백개 이상의 직교(Orthogonal)하는 협대역 부 반송파(Subcarrier)로 변조시켜 다중화하는 방식 
+ - [참고](https://m.blog.naver.com/anniy7/220616369420)
+ - [참고2](http://www.ktword.co.kr/abbr_view.php?m_temp1=403)
+
+
+
 ## 연결
  - [MIMO(Multiple Input Multiple Output)](https://www.ni.com/ko-kr/innovations/white-papers/14/5g-massive-mimo-testbed--from-theory-to-reality--.html)
    - 송수신 기지국(BTS; Base Transceiver Station)에서 다량의 안테나(64개 이상)를 사용하여 무선 데이터 속도와 링크 안정성 향상
@@ -127,7 +142,13 @@
  - [PHY(Physical Layer)](http://www.ktword.co.kr/abbr_view.php?m_temp1=5179&m_search=PHY)
    - 주파수 변조, 코딩, 물리계층 HARQ 처리, 다중 안테나 처리, 신호의 시간-주파수 자원에의 매핑, 전송채널을 물리채널로의 매핑 등
    - 전송 채널, 물리 채널, 물리 제어 정보 간에 매핑
+ 
+ - TX(Transmit Data) : 데이터 전송을 의미
+ - RX(Receive Data) : 데이터 수신을 의미
+   - 기지국, 단말 모두 두 단자를 모두 가지고 있어 기지국이 TX 소자에서 데이터를 전송하면 단말은 RX 소자에서 데이터를 수신, 그 반대도 마찬가지
+   - FDD 방식에서는 두 소자가 반드시 분리되어야 할 듯(?)
    
+
  - MME: Mobility ManagemEntity
  - SGW: Serving Gateway
 
