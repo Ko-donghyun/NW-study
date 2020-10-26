@@ -88,20 +88,21 @@
       
       
 
-## 데이터 전송 방식
+## [데이터 전송 방식](https://m.blog.naver.com/withminit/220724251185
  - FDD(Frequency Division Duplexing)
    - Uplink와 Downlink를 동시에 전달 가능
+   - 주파수를 나눠서 사용한다는 관점에서 라디오 채널과 비슷함
    
  - TDD(Time Division Duplexing)
    - Uplink와 Downlink를 주어진 시간에만 전달 가능
-   
+   - 시간을 나눠서 사용한다는 관점에서 무전기 원리와 비슷함
 
 ## [Waveform](https://guslabview.tistory.com/159)
- - Multiple Access : 다수의 단말이 자원을 공유하여 접속하는 방식
+ - Multiple Access : <br>다수의 단말</br>이 자원을 공유하여 접속하는 방식
  - [FDMA(Frequency Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=806)
-   - Like 라디오 채널
+   
  - [TDMA(Time Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?m_temp1=348&id=911)
-   - Like 무전기 원리
+   
  - [CDMA(Code Division Multiplex Access)](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=253&id=386)
 
  - [OFDM(Orthogonal Frequency Division Multiplexing)](http://www.ktword.co.kr/abbr_view.php?m_temp1=2163)
