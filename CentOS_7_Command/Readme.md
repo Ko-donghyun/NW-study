@@ -14,7 +14,7 @@
   - ``$ source ~/.bashrc``
 
 - 파일 찾기 [링크](https://recipes4dev.tistory.com/156)
-  - ``$ find /Directory -name "파일명"
+  - ``$ find /Directory -name "파일명"``
 
 - 압축풀기
   - ``tar -xzf 파일명``
