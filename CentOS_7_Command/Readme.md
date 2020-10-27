@@ -22,7 +22,8 @@
   
 - [심볼릭 링크 만들기](https://gold9ine.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-symbolic-link-%EB%A7%8C%EB%93%A4%EA%B8%B0)
   - 프로그램 명만 입력해도 실행될 수 있도록
-  - ``$ sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/bin/subl``
+  - ``$ sudo ln -s 프로그램위치 /usr/bin/내가 명령어로 쓸 이름``
+  - /usr/bin에 명령어를 그대로 링크 걸면 바로 쓸 수 있음
   
 - 백그라운드로 실행
   - ``./program &``
