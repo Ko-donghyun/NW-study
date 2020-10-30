@@ -16,6 +16,9 @@
 - 파일 찾기 [링크](https://recipes4dev.tistory.com/156)
   - ``$ find /Directory -name "파일명"``
 
+- [Change Directory 돌아가기](http://www.openforis.org/tools/sepal/tutorials/using-the-command-line.html)
+  - ``$ cd -``
+
 - 압축풀기
   - ``tar -xzf 파일명``
   - ``tar -xvf 파일명``
@@ -28,6 +31,14 @@
 - 백그라운드로 실행
   - ``./program &``
   
+- 터미널이 종료되도 백그라운드에서 계속 실행되도록
+  - ``nohpu ./program &``
+
+- foreground 프로그램을 background로 전환
+  - Ctrl + z
+  
+  
+
 # vi  
 - 문자열 찾기
   - /검색 문자열 후 Enter
