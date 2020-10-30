@@ -86,7 +86,27 @@
    - 상향 링크
       - PUCCH (Physical Uplink Control Channel)
       
-      
+ 
+## [Modulation](http://www.ktword.co.kr/abbr_view.php?id=229&m_temp1=5215&nav=2)
+ - AKS(Amplitude Shift Keying)
+   - 진폭을 다르게 하며 신호를 구분
+ - FSK(Frequency Shift Keying)
+   - 주파수를 다르게 하여 신호를 구분
+ - PSK(Phase Shift Keying)
+   - 위상을 다르게 하여 신호를 구분
+   - BPSK(Binary)
+      - 두개의 신호를 구분하기 위해 2개의 위상 변조
+      - 0도, 180도
+   - QPSK(Quadrature)
+      - 네개의 신호를 구분하기 위해 4개의 위상 변조
+      - 0도, 90도, 180도, 270도 또는 45도, 135도, 225도, 315도
+ - [QAM(Quadrature Amplitude Modulation)](http://www.ktword.co.kr/abbr_view.php?m_temp1=1582)
+   - PSK(위상변조)에서 ASK(진폭변조)를 추가한 형태
+   - 8QAM
+      - QPSK에 진폭변조를 통해 QPSK를 추가한 형태
+   - 16QAM
+
+![ex_screenshot](./img/16QAM.jpg)
 
 ## [데이터 전송 방식](https://m.blog.naver.com/withminit/220724251185
  - FDD(Frequency Division Duplexing)
