@@ -34,9 +34,11 @@
 - 터미널이 종료되도 백그라운드에서 계속 실행되도록
   - ``nohpu ./program &``
 
-- foreground 프로그램을 background로 전환
+- [foreground 프로그램을 background로 전환](https://brownbears.tistory.com/166)
   - Ctrl + z
-  
+  - bg 입력
+
+
   
 
 # vi  
