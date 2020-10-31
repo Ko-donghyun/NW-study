@@ -8,11 +8,46 @@
      - 네트워크 대역폭(Network BandWidth)
      - 데이터 대역폭(Data BandWidth)
      - 디지털 대역폭(Digital BandWidth)
+ - 유선 통신 => 무선 통신 => 모바일 통신
+   - 단말(UE) <==> (Access Network) <==> (Core Network) <==> 인터넷
+   - 유선 통신 : 단말과 Access Network 간에도 물리적인 케이블로 연결됨
+   - 무선 통신 : 단말과 Access Network 간에 Air를 통해 연결됨
+   - 모바일 통신 : 무선 통신에 이동성이라는 특성이 추가
+ - Access Network
+   - 서로 알 수 없는 두 디바이스(기지국, UE)간에 유의미한 데이터를 주고 받는 행위
+   - 무선, 모바일 통신은 주파수를 이용함
+     - Core로부터의 디지털 신호를 아날로그 신호로 변환하여 Air를 통해 UE로 전달
+     - UE로부터의 아날로그 신호를 디지털 신호로 변환하여 유선망을 통해 코어로 전달
+   - 약속된 수식(?)을 공유하고, 해당 수식에 들어가는 값들만 서로 전달하여 규약에 대한 리소스 소모를 최소화 함 
+   - 단말과 연결되는 기지국에서부터 코어로 들어가기 전까지의 중계기까지의 범위
+ - Core Network
+   - 단말(가입자) 인증 및 이동성 관리
+   - 단말의 트래픽을 인터넷으로 연결
+   - Access Network로 부터의 데이터를 받는 Gateway부터 Internet으로 들어가기 전까지의 범위
+
+## 주파수(Hz)
+ - 전파가 1초 동안 주기적인 현상(진동)이 몇 번 발생하는가?
+ - 주파수 구성
+   - 주기(s) : 1번의 현상이일어나는데 걸리는 시간(1/f = s)
+   - 진폭 : 주파수의 크기
+   - 위상 : 0초일때, 주기가 처음 시작하는 위치
+ - 같은 주파수라도 진폭과 위상에 따라 다른 신호로 구분할 수 있음
+ - 0초에서 (1/주파수)초 동안에 들어온 신호를 봤을 때, 아래 세 신호는 다 다르게 들어옴
+   - <0>  진폭 : B      &  위상 : C
+   - <1>  진폭 : B      &  위상 : C + 90º
+   - <2>  진폭 : B×2  &  위상 : C
+ - 따라서, 하나의 주파수에서 진폭과 위상으로 데이터를 신호로 구성하여 전달할 수 있음 
+ - 위의 경우는 3개의 다른 신호를 3개의 데이터로 Mapping
+ - 즉, 3개의 데이터를 2개의 bit를 이용하여 00, 01, 10의 디지털 신호와 Mapping
+ - 주파수는 한정된 자원
+   - 주파수가 낮을 수록 멀리까지 잘 보낼 수 있음
+   - 주파수가 높을 수록 멀리 보내긴 힘듦
+   - 대신, 주파수가 높아 동일한 시간동안 더 많은 진동현상을 확인할 수 있어, 더 많은 데이터를 주고 받을 수 있음
 
 ## 장비
  - CN(Core Network) : 과금 등의 서비스 정책 처리 단
  - [4G C-RAN 구조(Centralized/Cloud-Radio Access Network; CU + DU)](https://ko.wikipedia.org/wiki/무선_접속_네트워크)
-   - BBU(BaseBand Unit)
+   - BBU(BaseBand Unit == Digital Unit)
      - RRC, PDCP, RLC, MAC, PHY
    - RRH(Remote Radio Head ~vs Radio Unit~)
      - RF
@@ -24,7 +59,7 @@
    - 5G에서 massive MIMO와 넓은 대역폭으로 인한 데이터 속도 증가 상황을 고려하여 4G에서의 DU와 RU 분리 위치보다 더 상위 계층에서 분리
    - CU(Central Unit ~vs Control Unit~)
      - RRC, PDCP
-   - DU(Distributed Unit ~vs Digital Unit~)
+   - DU(Distributed Unit)
      - RLC, MAC, PHY-High
    - RU(Remote Unit ~vs Radio Unit~)
      - PHY-Low
@@ -101,7 +136,8 @@
       - 네개의 신호를 구분하기 위해 4개의 위상 변조
       - 0도, 90도, 180도, 270도 또는 45도, 135도, 225도, 315도
  - [QAM(Quadrature Amplitude Modulation)](http://www.ktword.co.kr/abbr_view.php?m_temp1=1582)
-   - PSK(위상변조)에서 ASK(진폭변조)를 추가한 형태
+   - PSK(위상변조)에서 ASK(진폭변조)를 추가한 형태, 
+   - 복소수로 표현 가능 : Real value(실수)와 Imaginal value(허수)
    - 8QAM
       - QPSK에 진폭변조를 통해 QPSK를 추가한 형태
    - 16QAM
