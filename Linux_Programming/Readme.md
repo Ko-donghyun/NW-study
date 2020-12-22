@@ -29,4 +29,8 @@ timeout 3.5s sleep 10
 
 ### [exec과 eval](https://neet.tistory.com/entry/bash%EC%97%90%EC%84%9C-exec%EC%99%80-eval%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C)
 
-### 
+### g++
+C로 구현된 코드는 gcc compiler로 C++로 구현된 코드는 g++ compiler로
+https://erato1004.tistory.com/entry/exturn-C
+
+
